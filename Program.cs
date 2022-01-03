@@ -17,4 +17,19 @@ void  PrintArray (int [] array)
     }
 }
 int [] arrayOfNumbers = new int [6];
-PrintArray(FillArray(arrayOfNumbers));
+FillArray(arrayOfNumbers);
+PrintArray(arrayOfNumbers);
+Console.WriteLine();
+
+void OutputEven (int [] array)
+{
+    int size = array.Length;
+    for (int index = 0; index < size; index ++)
+    {
+        if (array[index] % 2 == 0)
+        {
+            Console.Write(array[index] + " ");
+        }
+    }
+}
+OutputEven(arrayOfNumbers);
