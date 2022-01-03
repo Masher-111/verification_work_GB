@@ -16,10 +16,6 @@ void  PrintArray (int [] array)
         Console.Write (array[position] + " ");
     }
 }
-int [] arrayOfNumbers = new int [6];
-FillArray(arrayOfNumbers);
-PrintArray(arrayOfNumbers);
-Console.WriteLine();
 
 void OutputEven (int [] array)
 {
@@ -32,4 +28,28 @@ void OutputEven (int [] array)
         }
     }
 }
-OutputEven(arrayOfNumbers);
+
+int [] ArrayOfEven (int [] array)
+{
+    int countEven = 0;
+    int size = array.Length;
+    for (int index = 0; index < size; index++)
+    {
+        if (array[index] % 2 ==0)
+        {
+            countEven++;
+        }
+    }
+    int [] arrayEven = new int [countEven];
+    int j = 0;
+    for ( int i = 0; i < size; i++)
+    {
+         if (array[i] % 2 == 0)
+        {
+            arrayEven[j] = array[i];
+            j ++;
+         }
+ 
+    }
+    return arrayEven;
+}
