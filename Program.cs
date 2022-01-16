@@ -3,7 +3,7 @@
     int count = array.Length;
     for (int i = 0; i < count; i ++)
     {
-        array[i] = new Random().Next(-10, 10); 
+        array[i] = new Random().Next(-100, 100); 
     }
     return array;
 }
@@ -53,3 +53,8 @@ int [] ArrayOfEven (int [] array)
     }
     return arrayEven;
 }
+int [] arrayOfNumbers = new int [10];
+FillArray(arrayOfNumbers);
+PrintArray(arrayOfNumbers);
+Console.WriteLine();
+PrintArray(ArrayOfEven(arrayOfNumbers));
