@@ -17,18 +17,6 @@ void  PrintArray (int [] array)
     }
 }
 
-void OutputEven (int [] array)
-{
-    int size = array.Length;
-    for (int index = 0; index < size; index ++)
-    {
-        if (array[index] % 2 == 0)
-        {
-            Console.Write(array[index] + " ");
-        }
-    }
-}
-
 int [] ArrayOfEven (int [] array)
 {
     int countEven = 0;
